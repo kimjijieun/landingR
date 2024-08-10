@@ -6,25 +6,31 @@
     <title>Ji_Eun portfolio</title>
     <link rel="icon" href="./asset/images/favicon.ico">
 
-    <link rel="stylesheet" href="./asset/css/layout.css">
-    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
-    <div class="cuser">
-        <span>View project</span>
-    </div>
+    <!-- <div class="cuser_box">
+        <span class="cursor">M</span>
+        <span class="cursor spell1">O</span>
+        <span class="cursor spell2">R</span>
+        <span class="cursor spell3">E</span>
+        <span class="cursor spell4">V</span>
+        <span class="cursor spell5">I</span>
+        <span class="cursor spell6">E</span>
+        <span class="cursor spell7">W</span>
+    </div> -->
 
     <div class="wrap">
         <div class="loding-page">
-            <div class="logo-text">
+            <!-- <div class="logo-text">
                 <span class="por">por</span>
                 <span class="t">t</span>
                 <span class="fo">fo</span>
                 <span class="lio">lio</span>
-            </div>
+            </div> -->
 
             <div class="m-logo-text">
                 <span class="port">port</span>
@@ -40,9 +46,17 @@
 
         <header class="header">
 
-            <h1><div class="logo">kim ji eun</div></h1>
+            <div class="logo-wrap">
+                <h1 class="logo"><a href="#"class="link-logo">kim ji eun</a></h1>
+                <nav class="nav-area">
+                    <a href="" class="link-nav" data-target=".work-area">Work</a>
+                    <a href="" class="link-nav" data-target=".sc-output">About</a>
+                    <a href="" class="link-nav" data-target=".footer">Contact</a>
+                    <!-- <a href="" class="link-nav">Menu</a> -->
+                </nav>
+            </div>
 
-            <button class="btn btn-menu">
+            <!-- <button class="btn btn-menu">
 
                 <span class="blind">메뉴버튼</span>
     
@@ -52,37 +66,36 @@
                     <i class="btn-line line-bottom"></i>
                 </span>
     
-            </button>
-            <div class="menu-area">
-    
-                <div class="pan-box"><div class="pan"></div></div>
-                <div class="menu-wrap">
-                    <div class="menu-box">
-                        <em class="title">NAVIGATION</em>
-                        <ul class="menu-list">
-                            <li class="menu-item on move"><a href="#">Home</a></li>
-                            <li class="menu-item move"><a href="" data-target=".work-area">Work</a></li>
-                            <li class="menu-item move"><a href="" data-target=".sc-output">About</a></li>
-                            <li class="menu-item move"><a href="" data-target=".footer">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-box">
-                        <em class="title menu-title">INFORMATION</em>
-                        <ul class="social-list">
-                            <li class="social-item move"><a href="mailto:kimjiji96@naver.com">Email</a></li>
-                            <li class="social-item move"><a href="https://github.com/kimjijieun" target="_blank">Github</a></li>
-                            <li class="social-item move"><a href="https://velog.io/@kimjiji_0" target="_blank">Velog</a></li>
-                        </ul>
-                    </div>
+            </button> -->
+
+            <div class="menu-wrap">
+                <div class="menu-box">
+                    <ul class="menu-list">
+                        <li class="menu-item on"><a href="#"><span class="num">1</span>Home</a></li>
+                        <li class="menu-item"><a href="" data-target=".work-area"><span class="num">2</span>Work</a></li>
+                        <li class="menu-item"><a href="" data-target=".sc-output"><span class="num">3</span>About</a></li>
+                        <li class="menu-item"><a href="" data-target=".footer"><span class="num">4</span>Contact</a></li>
+                    </ul>
+                    <ul class="social-list">
+                        <li class="social-item"><a href="mailto:kimjiji96@naver.com">Email</a></li>
+                        <li class="social-item"><a href="https://github.com/kimjijieun" target="_blank">Github</a></li>
+                        <li class="social-item"><a href="https://velog.io/@kimjiji_0" target="_blank">Velog</a></li>
+                    </ul>
                 </div>
             </div>
+
         </header>
 
         <main class="main">
             <section class="sc-intro">
                 <h2 class="blind">메인정보</h2>
 
-                <div class="animate-box">
+                <figure class="video-wrap">
+                    <video muted preload="auto" playsinline="true" autoplay="true" loop="loop" class="video">
+                        <source src="./asset/videos/visual-video.mp4">
+                    </video>
+                </figure>
+                <!-- <div class="animate-box">
                     <div class="animate-name">
                         <span>dramatic</span>
                         <span>—</span>
@@ -111,59 +124,69 @@
                         <span>inquisitive</span>
                         <span>—</span>
                     </div>
-                </div>
+                </div> -->
             </section>
 
             <section class="sc-work">
                 <span class="blind">설명</span>
-                <div class="work-desc">
+                <h2 class="work-desc">
                     <span class="t1">깔끔한 디자인과 인터랙티브 웹을 지향합니다.</span> <br>
                     <span class="t2">탄탄한 시멘틱 마크업과 매혹적인 UI/UX를 위해</span> <br>
                     <span class="t3">끊임없이 기술을 향상시키며 사용자에게 즐거움과 </span> <br>
                     <span class="t4">편의를 제공하는 열정적인 퍼블리셔가 되겠습니다.</span> <br>
-                </div>
+                </h2>
             </section>
 
             <section class="sc-project">
                 <h2 class="title col">RECENT WORK</h2>
-
-                <span class="cursor">M</span>
-                <span class="cursor spell1">O</span>
-                <span class="cursor spell2">R</span>
-                <span class="cursor spell3">E</span>
-                <span class="cursor spell4">H</span>
-                <span class="cursor spell5">E</span>
-                <span class="cursor spell6">R</span>
-                <span class="cursor spell7">E</span>
-
-                <div class="project-area">
-                    <ul class="title-wrap">
-                        <li>
-                            <a href="">
-                                <span class="p-title"></span>
-                                <span class="title-num">1</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="p-title"></span>
-                                <span class="title-num">2</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="p-title"></span>
-                                <span class="title-num">3</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="project-list">
-                        <li class="project-item">
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                        </li>
-                    </ul>
+                <div class="inner">
+                    <!-- <span class="cursor">M</span>
+                    <span class="cursor spell1">O</span>
+                    <span class="cursor spell2">R</span>
+                    <span class="cursor spell3">E</span>
+                    <span class="cursor spell4">H</span>
+                    <span class="cursor spell5">E</span>
+                    <span class="cursor spell6">R</span>
+                    <span class="cursor spell7">E</span> -->
+                    <div class="project-area">
+                        <ul class="title-list">
+                            <li>
+                                <a href="">
+                                    <span class="p-title">djWJrh</span>
+                                    <span class="title-num">1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="p-title">wjWJrh</span>
+                                    <span class="title-num">2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="p-title">spdlj</span>
+                                    <span class="title-num">3</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="project-list">
+                            <li class="project-item">
+                                <a href="">
+                                    <img src="./asset/images/contents/Rose.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="project-item">
+                                <a href="">
+                                    <img src="./asset/images/contents/soto.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="project-item">
+                                <a href="">
+                                    <img src="./asset/images/contents/Rose.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </section>

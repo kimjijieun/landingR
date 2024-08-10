@@ -1,0 +1,105 @@
+.sc-intro{
+    height: 100vh;
+    // background-color: rgb(102, 102, 102);
+
+    .video-wrap{
+        width: 100%;
+        height: 100%;
+
+        video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.sc-work{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .work-desc{
+        // line-height: 0.8;
+        text-align: center;
+        letter-spacing: -0.2vw;
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3vw;
+        width: 100%;
+    }
+}
+.sc-project{
+    .inner{
+        height: 400vh;
+        display: flex;
+        flex-direction: column;
+        .title{
+            text-align: center;
+        }
+    }
+
+    .project-area{
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+        .title-list{
+            overflow: hidden;
+            height: 20%;
+            // height: 17%;
+            a{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: 1rem 0 1rem;
+                line-height: 0.975;
+                .p-title {
+                        position: relative;
+                        font-size: 4rem;
+                        // font-family: "Surt-Regular", sans-serif;
+                        letter-spacing: -0.4rem;
+                        // line-height: 0.975;
+                        color: #484036;
+                    }
+                .title-num{
+                    font-size: 1.3rem;
+                    margin-left: 1rem;
+                    margin-bottom: 3rem;
+                    color: #484036;
+                }
+            }
+        }
+
+        .project-list{
+            position: relative;
+            .project-item{
+                position: relative;
+                a{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 90vh;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                    }
+                }
+                &:nth-child(1){z-index: 5;}
+                &:nth-child(2){z-index: 4;}
+                &:nth-child(3){z-index: 3;}
+                // &:nth-child(2){}
+            }
+        }
+    }
+}
