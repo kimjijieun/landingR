@@ -8,11 +8,17 @@
 
     <link rel="stylesheet" href="./asset/css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+
+
+    <script defer src="./asset/js/gsap.js"></script>
+    <script defer src="./asset/js/main.js"></script>
 </head>
 <body>
-    <!-- <div class="cuser_box">
+    <div class="cuser_box">
         <span class="cursor">M</span>
         <span class="cursor spell1">O</span>
         <span class="cursor spell2">R</span>
@@ -21,7 +27,7 @@
         <span class="cursor spell5">I</span>
         <span class="cursor spell6">E</span>
         <span class="cursor spell7">W</span>
-    </div> -->
+    </div>
 
     <div class="wrap">
         <div class="loding-page">
@@ -49,14 +55,14 @@
             <div class="logo-wrap">
                 <h1 class="logo"><a href="#"class="link-logo">kim ji eun</a></h1>
                 <nav class="nav-area">
-                    <a href="" class="link-nav" data-target=".work-area">Work</a>
+                    <a href="" class="link-nav" data-target=".sc-project .project-area">Work</a>
                     <a href="" class="link-nav" data-target=".sc-output">About</a>
                     <a href="" class="link-nav" data-target=".footer">Contact</a>
                     <!-- <a href="" class="link-nav">Menu</a> -->
                 </nav>
             </div>
 
-            <!-- <button class="btn btn-menu">
+            <button class="btn btn-menu">
 
                 <span class="blind">메뉴버튼</span>
     
@@ -66,7 +72,7 @@
                     <i class="btn-line line-bottom"></i>
                 </span>
     
-            </button> -->
+            </button>
 
             <div class="menu-wrap">
                 <div class="menu-box">
@@ -127,14 +133,18 @@
                 </div> -->
             </section>
 
-            <section class="sc-work">
+            <section class="sc-work" id="a">
                 <span class="blind">설명</span>
-                <h2 class="work-desc">
-                    <span class="t1">깔끔한 디자인과 인터랙티브 웹을 지향합니다.</span> <br>
-                    <span class="t2">탄탄한 시멘틱 마크업과 매혹적인 UI/UX를 위해</span> <br>
-                    <span class="t3">끊임없이 기술을 향상시키며 사용자에게 즐거움과 </span> <br>
-                    <span class="t4">편의를 제공하는 열정적인 퍼블리셔가 되겠습니다.</span> <br>
-                </h2>
+                <div class="as">
+                    <h2 class="work-tit">always open to learn something new, absorb it</h2>
+                    <h3 class="work-desc">
+                        <span class="t1">깔끔한 디자인과 인터랙티브 웹을 지향합니다.</span> <br>
+                        <span class="t2">탄탄한 시멘틱 마크업과 매혹적인 UI/UX를 위해 끊임없이</span> <br>
+                        <span class="t3">기술을 향상시키며 사용자에게 즐거움과 </span> <br>
+                        <span class="t4">편의를 제공하는 열정적인 퍼블리셔가 되겠습니다.</span> <br>
+                    </h3>
+                </div>
+                
             </section>
 
             <section class="sc-project">
@@ -149,7 +159,7 @@
                     <span class="cursor spell6">R</span>
                     <span class="cursor spell7">E</span> -->
                     <div class="project-area">
-                        <ul class="title-list">
+                        <!-- <ul class="title-list">
                             <li class="title-item">
                                 <a href="">
                                     <span class="p-title">djWJrh</span>
@@ -168,7 +178,21 @@
                                     <span class="title-num">3</span>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
+                        <div class="title-list">
+                            <a href="">
+                                <span class="p-title">djWJrh</span>
+                                <span class="title-num">1</span>
+                            </a>
+                            <a href="">
+                                <span class="p-title">wjWJrh</span>
+                                <span class="title-num">2</span>
+                            </a>
+                            <a href="">
+                                <span class="p-title">spdlj</span>
+                                <span class="title-num">3</span>
+                            </a>
+                        </div>
                         <div class="project-wrap">
                             <a href="" class="img-box">
                                 <img src="./asset/images/contents/Rose.jpg" alt="">
@@ -225,6 +249,15 @@
                 <h2 class="sc-title">2024 WORK ~</h2>
                 <div class="content-wrap">
                     <div class="common-inner">
+                        <div class="view-wrap">
+                            <div class="view-box">
+                                <div class="item"><img src="./asset/images/contents/navercareerig.png" alt=""></div>
+                                <div class="item"><img src="./asset/images/contents/naverig.png" alt=""></div>
+                                <div class="item"><img src="./asset/images/contents/navercareerig.png" alt=""></div>
+                                
+                            </div>
+                        </div>
+
                         <ul class="content-list">
                             <li class="content-item">
                                 <a href="" target="_blank">
@@ -276,7 +309,7 @@
 
             <section class="sc-roll">
                 <span class="blind">가로스크롤스킬</span>
-
+                <h2 class="sc-title">TO STUDY</h2>
                 <div class="common-inner">
                     <ul class="slide-list">
                         <li class="slide-item">
@@ -313,34 +346,33 @@
         </main>
 
         <footer class="footer">
-            <section class="sc-oneself">
-                <div class="common-inner">
-                    <div class="profile-wrap">
-                        <div class="profile-box">
-                            <div class="profile-txt">
-                                <div class="profile"></div>
-                                <span>Let’s work</span>
-                                <span>together</span>
-                            </div>
-                            <i class="arrow">
-                                <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1">
-                                    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Artboard3" transform="translate(-1019.000000, -279.000000)" stroke="#FFFFFF" stroke-width="1.5">
-                                            <g id="arrow-up-right2" transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
-                                                <polyline id="Path3" points="2.76923077 0 12 0 12 9.23076923"></polyline>
-                                                <line x1="12" y1="0" x2="0" y2="12" id="Path4"></line>
-                                            </g>
+            <div class="common-inner">
+                <div class="profile-wrap">
+                    <div class="profile-box">
+                        <div class="profile-txt">
+                            <div class="profile"></div>
+                            <span>Let’s work</span>
+                            <span>together</span>
+                        </div>
+                        <i class="arrow">
+                            <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1">
+                                <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Artboard3" transform="translate(-1019.000000, -279.000000)" stroke="#FFFFFF" stroke-width="1.5">
+                                        <g id="arrow-up-right2" transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
+                                            <polyline id="Path3" points="2.76923077 0 12 0 12 9.23076923"></polyline>
+                                            <line x1="12" y1="0" x2="0" y2="12" id="Path4"></line>
                                         </g>
                                     </g>
-                                </svg>
-                            </i>
-                        </div>
+                                </g>
+                            </svg>
+                        </i>
                         <a href="mailto:kimjiji96@naver.com" class="btn btn-work btn-work1 move">
                             <div class="btn-fill"></div>
                             <span class="btn-txt">Get in touch</span>
                         </a>
                     </div>
-                    <div class="contact-area">
+
+                    <div class="contact-box">
                         <a href="mailto:kimjiji96@naver.com" class="btn btn-more contact-desc move">
                             <div class="btn-fill"></div>
                             <span class="btn-txt">kimjiji96@naver.com</span>
@@ -350,26 +382,15 @@
                             <span class="btn-txt">010-2078-1901</span>
                         </a>
                     </div>
-                    <div class="footer-bott">
-                        <span class="tit">2024 © Edition</span>
-                        <div class="link-box">
-                            <a href="https://github.com/kimjijieun" class="on move" target="_blank">Github</a>
-                            <a href="https://velog.io/@kimjiji_0" class="on move" target="_blank">Velog</a>
-                        </div>
-                        <!-- <div class="row">
-                            <h3 class="title">VERSION</h3>
-                            <span>2024 © Edition</span>
-                        </div>
-                        <div class="row">
-                            <h3 class="title">INFORMATION</h3>
-                            <div class="link-box">
-                                <a href="https://github.com/kimjijieun" class="on move" target="_blank">Github</a>
-                                <a href="https://velog.io/@kimjiji_0" class="on move" target="_blank">Velog</a>
-                            </div>
-                        </div> -->
+                </div>
+                <div class="footer-bott">
+                    <span class="tit">2024 © Edition</span>
+                    <div class="link-box">
+                        <a href="https://github.com/kimjijieun" class="on move" target="_blank">Github</a>
+                        <a href="https://velog.io/@kimjiji_0" class="on move" target="_blank">Velog</a>
                     </div>
                 </div>
-            </section>
+            </div>
         </footer>
     </div>
 </body>

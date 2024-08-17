@@ -17,18 +17,38 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    .work-desc{
-        // line-height: 0.8;
+
+    .as{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         text-align: center;
-        letter-spacing: -0.2vw;
-        position: absolute;
-        display: block;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3vw;
-        width: 100%;
+        gap: 0.5rem;
+        opacity: 0;
+
+        .work-tit{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            width: 70%;
+            line-height: 1.25;
+        }
     }
+    // .work-desc{
+    //     // line-height: 0.8;
+    //     text-align: center;
+    //     letter-spacing: -0.2vw;
+    //     position: absolute;
+    //     display: block;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     font-size: 3vw;
+    //     width: 100%;
+    // }
 }
 .sc-project{
 
@@ -109,6 +129,28 @@
 }
 
 .sc-ing{
+    margin-top: 5rem;
+
+    .view-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        pointer-events: none;
+        opacity: 0;
+        transition: width .4s cubic-bezier(0.36, 0, 0.66, 0);
+        transform-origin: left top;
+
+        .view-box {
+            max-width: 550px;
+            // height: 345px;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transition: width .4s cubic-bezier(0.36, 0, 0.66, 0);
+        }
+    }
 
     .content-list{
         border-top: 1px solid rgb(95 94 94 / 56%);
@@ -119,11 +161,16 @@
             
             a{
                 display: block;
-                padding: 43px 0 50px 54px;
+                padding: 1.5rem 0 1.7rem 4.5rem;
+                transition: all .3s cubic-bezier(.7, 0, .3, 1);
+                // opacity: .33;
+                opacity: .55;
                 // color: #ACB4B8;
                 &:hover{
                     background: linear-gradient(90deg, rgb(172 181 183 / 46%) 50%, transparent 100%);
-                    // color: #fff
+                    padding: 1.5rem 0 1.7rem 3rem;
+                    opacity: 1;
+                    // transform: translateX(-20px);
                 }
             }
         }
@@ -132,18 +179,26 @@
 
         .title{
             font-size: clamp(1.6rem, 1.6vw, 2rem);
+            position: relative;
             // font-size: 45px;
-            font-weight: 500;
+            font-weight: bold;
             // text-transform: uppercase;
             i{
-                font-size: clamp(.8rem, .6vw, 1.2rem);
+                font-size: 0.5rem;
+                position: absolute;
+                top: 8px;
+                left: -1.35rem;
+                letter-spacing: .04em;
+                font-weight: 500;
                 line-height: 1.2;
             }
         }
         .desc{
-            font-size: clamp(.8rem, .6vw, 1.2rem);
-            margin-top: 50px;
-            line-height: 24px;
+            // font-size: clamp(.8rem, .6vw, 1.2rem);
+            margin-top: 2vh;
+            line-height: 1.2;
+            font-size: 0.65rem;
+            font-weight: 500;
         }
         .hash{
             display: flex;
@@ -152,7 +207,8 @@
             gap: .8em;
             flex-direction: row;
             flex-wrap: wrap;
-            font-size: .8em;
+            font-size: 0.5rem;
+            margin-top: 0.2rem;
             opacity: 0.5;
         }
     }
@@ -160,6 +216,7 @@
 
 .sc-roll{
     margin-top: 20vh;
+    padding-bottom: 30vh;
     .slide-list{
         display: flex;
         // align-items: center;
@@ -168,11 +225,11 @@
             flex: 1;
 
             .slide-title{
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 font-weight: 600;            
             }
             .info{
-                font-size: 0.7rem;
+                font-size: 0.6rem;
                 font-weight: 400;
                 line-height: 1.5;
             }
