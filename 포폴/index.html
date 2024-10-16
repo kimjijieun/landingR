@@ -12,23 +12,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+   <!-- lenis -->
+   <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script> 
 
 
     <script defer src="./asset/js/gsap.js"></script>
     <script defer src="./asset/js/main.js"></script>
 </head>
 <body>
-    <div class="cuser_box">
-        <span class="cursor">M</span>
-        <span class="cursor spell1">O</span>
-        <span class="cursor spell2">R</span>
-        <span class="cursor spell3">E</span>
-        <span class="cursor spell4">V</span>
-        <span class="cursor spell5">I</span>
-        <span class="cursor spell6">E</span>
-        <span class="cursor spell7">W</span>
-    </div>
-
     <div class="wrap">
         <div class="loding-page">
             <!-- <div class="logo-text">
@@ -77,10 +68,10 @@
             <div class="menu-wrap">
                 <div class="menu-box">
                     <ul class="menu-list">
-                        <li class="menu-item on"><a href="#"><span class="num">1</span>Home</a></li>
-                        <li class="menu-item"><a href="" data-target=".work-area"><span class="num">2</span>Work</a></li>
-                        <li class="menu-item"><a href="" data-target=".sc-output"><span class="num">3</span>About</a></li>
-                        <li class="menu-item"><a href="" data-target=".footer"><span class="num">4</span>Contact</a></li>
+                        <li class="menu-item on"><a href="#"><span class="num">01</span>Home</a></li>
+                        <li class="menu-item"><a href="" data-target=".work-area"><span class="num">02</span>Work</a></li>
+                        <li class="menu-item"><a href="" data-target=".sc-output"><span class="num">03</span>About</a></li>
+                        <li class="menu-item"><a href="" data-target=".footer"><span class="num">04</span>Contact</a></li>
                     </ul>
                     <ul class="social-list">
                         <li class="social-item"><a href="mailto:kimjiji96@naver.com">Email</a></li>
@@ -98,7 +89,10 @@
 
                 <figure class="video-wrap">
                     <video muted preload="auto" playsinline="true" autoplay="true" loop="loop" class="video">
-                        <source src="./asset/videos/visual-video.mp4">
+                        <!-- <source src="./asset/videos/visual-video.mp4"> -->
+                        <!-- <source src="https://v1.pinimg.com/videos/mc/720p/04/a9/de/04a9decf758694cb1ea99d03716d4418.mp4"> -->
+                        <!-- <source src="https://v1.pinimg.com/videos/mc/720p/6e/e4/80/6ee48025b210608c1c6312f47592a6a7.mp4"> -->
+                         <source src="./asset/videos/204284-923846067_small.mp4" type="">
                     </video>
                 </figure>
                 <!-- <div class="animate-box">
@@ -148,7 +142,7 @@
             </section>
 
             <section class="sc-project">
-                <h2 class="sc-title">RECENT WORK</h2>
+                <h2 class="sc-title">WORK</h2>
                 <div class="common-inner">
                     <!-- <span class="cursor">M</span>
                     <span class="cursor spell1">O</span>
@@ -158,27 +152,19 @@
                     <span class="cursor spell5">E</span>
                     <span class="cursor spell6">R</span>
                     <span class="cursor spell7">E</span> -->
+
+                    <!-- <div class="cuser_box">
+                        <span class="cursor">M</span>
+                        <span class="cursor spell1">O</span>
+                        <span class="cursor spell2">R</span>
+                        <span class="cursor spell3">E</span>
+                        <span class="cursor spell4">V</span>
+                        <span class="cursor spell5">I</span>
+                        <span class="cursor spell6">E</span>
+                        <span class="cursor spell7">W</span>
+                    </div> -->
+                    
                     <div class="project-area">
-                        <!-- <ul class="title-list">
-                            <li class="title-item">
-                                <a href="">
-                                    <span class="p-title">djWJrh</span>
-                                    <span class="title-num">1</span>
-                                </a>
-                            </li>
-                            <li class="title-item">
-                                <a href="">
-                                    <span class="p-title">wjWJrh</span>
-                                    <span class="title-num">2</span>
-                                </a>
-                            </li>
-                            <li class="title-item">
-                                <a href="">
-                                    <span class="p-title">spdlj</span>
-                                    <span class="title-num">3</span>
-                                </a>
-                            </li>
-                        </ul> -->
                         <div class="title-list">
                             <a href="">
                                 <span class="p-title">djWJrh</span>
@@ -192,21 +178,195 @@
                                 <span class="p-title">spdlj</span>
                                 <span class="title-num">3</span>
                             </a>
+                            <a href="">
+                                <span class="p-title">asdfse</span>
+                                <span class="title-num">4</span>
+                            </a>
                         </div>
                         <div class="project-wrap">
-                            <a href="" class="img-box">
-                                <img src="./asset/images/contents/Rose.jpg" alt="">
+                            <a href="" class="item">
+                                <div class="cont">
+                                    <i class=""></i>
+                                    <div class="con-img-box"><img src="./asset/images/contents/Rose.jpg" alt=""></div>
+                                </div>
                             </a>
-                            <a href="" class="img-box">
-                                <img src="./asset/images/contents/soto.jpg" alt="">
+                            <a href="" class="item">
+                                <div class="con-img-box"><img src="./asset/images/contents/soto.jpg" alt=""></div>
                             </a>
-                            <a href="" class="img-box">
-                                <img src="./asset/images/contents/Rose.jpg" alt="">
+                            <a href="" class="item">
+                                <div class="con-img-box"><img src="./asset/images/contents/Rose.jpg" alt=""></div>
+                            </a>
+                            <a href="" class="item">
+                                <div class="video-box">
+                                    <video loop="" autoplay="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://assets.website-files.com/63f5d378a903c2a12583ce2f/641319fe73926c0e5bc81ccf_ver 2-transcode.mp4"></video>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="sub-project">
+                <h2 class="sc-title">sub - project</h2>
+                <!-- <h2>sub - project</h2> -->
+                <div class="common-inner">
+                    <div class="project-area2">
+                        <div class="project-list project-list-large">
+                            <a href="" class="project-item">
+                                <p class="txt-desc txt-desc-top">GSAP 애니메이션 라이브러리, 코드의 재활용성과 가독성을 높인 전처리기 SCSS
+                                </p>
+                                <div class="item-box">
+                                    <img src="./asset/images/contents/roll2.jpg" alt="">
+                                </div>
+                                <div class="txt-ani">
+                                    <div class="txt-ani-box">
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                    </div>
+                                    <div class="txt-ani-box">
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                    </div>
+                                </div>
+
+                                <div class="txt-desc txt-desc-bott">
+                                    <span>#퍼블리싱100%</span>
+                                    <span>#반응형</span>
+                                    <span>#SCSS</span>
+                                    <span>#JQuery</span>
+                                    <span>#GSAP</span>
+                                    <span>#Swiper js</span>
+                                </div>
+                            </a>
+                            <!-- <a href="">code-></a> -->
+                        </div>
+                        <div class="project-list project-list-small">
+                            <a href="" class="project-item">
+                                <p class="txt-desc txt-desc-top">GSAP 애니메이션 라이브러리, 코드의 재활용성과 가독성을 높인 전처리기 SCSS
+                                </p>
+                                <div class="item-box">
+                                    <img src="./asset/images/contents/navercareerig.png" alt="">
+                                </div>
+                                <div class="txt-ani">
+                                    <div class="txt-ani-box">
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                    </div>
+                                    <div class="txt-ani-box">
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                    </div>
+                                </div>
+
+                                <div class="txt-desc txt-desc-bott">
+                                    <span>#퍼블리싱100%</span>
+                                    <span>#반응형</span>
+                                    <span>#SCSS</span>
+                                    <span>#JQuery</span>
+                                    <span>#GSAP</span>
+                                    <span>#Swiper js</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-list project-list-small">
+                            <a href="" class="project-item">
+                                <p class="txt-desc txt-desc-top">GSAP 애니메이션 라이브러리, 코드의 재활용성과 가독성을 높인 전처리기 SCSS
+                                </p>
+                                <div class="item-box">
+                                    <img src="./asset/images/contents/naverig.png" alt="">
+                                </div>
+                                <div class="txt-ani">
+                                    <div class="txt-ani-box">
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                    </div>
+                                    <div class="txt-ani-box">
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                    </div>
+                                </div>
+
+                                <div class="txt-desc txt-desc-bott">
+                                    <span>#퍼블리싱100%</span>
+                                    <span>#반응형</span>
+                                    <span>#SCSS</span>
+                                    <span>#JQuery</span>
+                                    <span>#GSAP</span>
+                                    <span>#Swiper js</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-list project-list-large">
+                            <a href="" class="project-item">
+                                <p class="txt-desc txt-desc-top">GSAP 애니메이션 라이브러리, 코드의 재활용성과 가독성을 높인 전처리기 SCSS
+                                </p>
+                                <div class="item-box">
+                                    <img src="./asset/images/contents/roll2.jpg" alt="">
+                                </div>
+                                <div class="txt-ani">
+                                    <div class="txt-ani-box">
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                    </div>
+                                    <div class="txt-ani-box">
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                        <span>Naver</span>
+                                    </div>
+                                </div>
+
+                                <div class="txt-desc txt-desc-bott">
+                                    <span>#퍼블리싱100%</span>
+                                    <span>#반응형</span>
+                                    <span>#SCSS</span>
+                                    <span>#JQuery</span>
+                                    <span>#GSAP</span>
+                                    <span>#Swiper js</span>
+                                </div>
                             </a>
                         </div>
                     </div>
                 </div>
-
             </section>
 
             <!-- 모바일 -->
@@ -246,37 +406,38 @@
 
             <section class="sc-ing">
                 <span class="blind">아주경제꺼</span>
-                <h2 class="sc-title">2024 WORK ~</h2>
+                <!-- <h2 class="sc-title">2024 WORK ~</h2> -->
+                <h2 class="sc-title">carrer ~</h2>
                 <div class="content-wrap">
                     <div class="common-inner">
-                        <div class="view-wrap">
+                        <!-- <div class="view-wrap">
                             <div class="view-box">
                                 <div class="item"><img src="./asset/images/contents/navercareerig.png" alt=""></div>
                                 <div class="item"><img src="./asset/images/contents/naverig.png" alt=""></div>
                                 <div class="item"><img src="./asset/images/contents/navercareerig.png" alt=""></div>
                                 
                             </div>
-                        </div>
+                        </div> -->
 
                         <ul class="content-list">
                             <li class="content-item">
                                 <a href="" target="_blank">
+                                    <strong class="title"><i>(01)</i>아주경제</strong>
                                     <div class="text-box">
-                                        <strong class="title"><i>(01)</i>아주경제</strong>
                                         <p class="desc">웹접근성을 고려하여 제작한 웹 사이트입니다. (PC, Mobile / 퍼블리싱 100%)</p>
-                                        <p class="hash">
+                                        <div class="hash">
                                             <span>#메인페이지</span>
                                             <span>#적응형</span>
                                             <span>#PC</span>
                                             <span>#Mobile</span>
-                                        </p>
+                                        </div>
                                     </div>
                                 </a>
                             </li>
                             <li class="content-item">
                                 <a href="" target="_blank">
+                                    <strong class="title"><i>(02)</i>아주프레스</strong>
                                     <div class="text-box">
-                                        <strong class="title"><i>(02)</i>아주프레스</strong>
                                         <p class="desc">웹접근성을 고려하여 제작한 웹 사이트입니다. (PC, Mobile / 퍼블리싱 100%)</p>
                                         <p class="hash">
                                             <!-- <span>#메인페이지</span> -->
@@ -289,8 +450,8 @@
                             </li>
                             <li class="content-item">
                                 <a href="" target="_blank">
+                                    <strong class="title"><i>(03)</i>아주어쩌고</strong>
                                     <div class="text-box">
-                                        <strong class="title"><i>(03)</i>아주어쩌고</strong>
                                         <p class="desc">웹접근성을 고려하여 제작한 웹 사이트입니다. (PC, Mobile / 퍼블리싱 100%)</p>
                                         <p class="hash">
                                             <!-- <span>#메인페이지</span> -->
@@ -311,7 +472,7 @@
                 <span class="blind">가로스크롤스킬</span>
                 <h2 class="sc-title">TO STUDY</h2>
                 <div class="common-inner">
-                    <ul class="slide-list">
+                    <!-- <ul class="slide-list">
                         <li class="slide-item">
                             <div class="img-box">
                                 <img src="./asset/images/contents/image.png" alt="">
@@ -340,7 +501,135 @@
                             </div>
                         </li>
 
-                    </ul>
+                    </ul> -->
+                
+                
+                    <!-- <div class="photo-txtwrap">
+                        <div class="photo-txtTop">
+                            <span>We bring</span>
+                            <span>brands to life</span>
+                        </div>
+                        <div class="photo-txtBott">
+                            <span>through</span>
+                            <div class="rolltext-box">
+                                <span>Identity</span>
+                                <span>Strategy</span>
+                                <span>Collateral</span>
+                                <span>Packaging</span>
+                                <span>Websites</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="roll-img-area">
+                        <div class="img-wrap" data-scroll-opacity>
+                            <div class="img-block"></div>
+                        
+                            <div class="img-box start-trigger">
+                                <img src="./asset/images/contents/roll2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="img-wrap" data-scroll-opacity>
+                            <div class="img-box video-box">
+                                <video autoplay muted playsinline="true" loop="loop" class="video">
+                                    <source src="./asset/images/contents/roll3-1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="img-block"></div>
+                        </div>
+                        <div class="img-wrap" data-scroll-opacity>
+                            <div class="img-block"></div>
+                        
+                            <div class="img-box start-trigger">
+                                <img src="./asset/images/contents/roll2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="img-wrap" data-scroll-opacity>
+                            <div class="img-box video-box">
+                                <video autoplay muted playsinline="true" loop="loop" class="video">
+                                    <source src="./asset/images/contents/roll3-1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="img-block"></div>
+                        </div>
+                        <div class="img-wrap" data-scroll-opacity>
+                            <div class="img-block"></div>
+                        
+                            <div class="img-box start-trigger">
+                                <img src="./asset/images/contents/roll2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="img-wrap" data-scroll-opacity>
+                            <div class="img-box video-box end">
+                                <video autoplay muted playsinline="true" loop="loop" class="video">
+                                    <source src="./asset/images/contents/roll3-1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="img-block"></div>
+                        </div>
+                    </div> -->
+                
+
+                    <div class="slider">
+                        <ul class="slider-list" data-scroll-opacity>
+                            <li class="slider-item">
+                                <div class="slide-top">
+                                    <!-- <div class="slide-img-box"> <img src="./assets/images/slide-img1.svg" alt="슬라이드 이미지"> </div> -->
+                                    <div class="slide-title-box">
+                                        <h3>Vanilla JS</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="slide-bottom">
+                                    <p>React, Vue.js와 같은 JavaScript 프레임워크 및 라이브러리의 기초를 이해하기 위해 현재 Udemy에서 바닐라 JavaScript 강의를 구매하여 수강하고 있습니다. GSAP의 다양한 애니메이션들을 JavaScript로 똑같이 구현하는 것을 현재의 목표로 삼고 있습니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="slider-item">
+                                <div class="slide-top">
+                                    <!-- <div class="slide-img-box"> <img src="./assets/images/slide-img1.svg" alt="슬라이드 이미지"> </div> -->
+                                    <div class="slide-title-box">
+                                        <h3>Three.js & Canvas</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="slide-bottom">
+                                    <p>인터랙티브한 화면을 위해 Three.js 강의를 통해 웹 브라우저에서 3D 그래픽을 렌더링하기 위해 사용되는 JavaScript 3D 라이브러리 Three.js를 학습하고 있습니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="slider-item">
+                                <div class="slide-top">
+                                    <!-- <div class="slide-img-box"> <img src="./assets/images/slide-img1.svg" alt="슬라이드 이미지"> </div> -->
+                                    <div class="slide-title-box">
+                                        <h3>REACT</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="slide-bottom">
+                                    <p>리액트는 어쩌고저쩌고 프론트엔트로써 어쩌고저쩌고 필요한 기술이기에 어쩌고저쩌고 공부하겠습니다.
+                                    React를 배워 현재의 웹 개발 스킬을 더욱 향상시키고 지금보다 더 다양한 프로젝트를 접할 기회를 가지고 싶습니다.
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li class="slider-item">
+                                <div class="slide-top">
+                                    <!-- <div class="slide-img-box"> <img src="./assets/images/slide-img1.svg" alt="슬라이드 이미지"> </div> -->
+                                    <div class="slide-title-box">
+                                        <h3>TypeScript</h3>
+                                    </div>
+                                </div>
+                    
+                                <div class="slide-bottom">
+                                    <p>React의 프로젝트를 더욱 안정적이고 가독성 높게 만들 수 있는 TypeScript를 같이 학습하려고 합니다. TypeScript의 코드 안정성, 가독성 향상, 자동 완성, 코드 품질 향상 등의 다양한 장점들을 활용하여 높은 퀄리티의 React 프로젝트를 만들어가는데 기여하겠습니다.
+                                    </p>
+                                </div>
+
+                            </li>
+                    
+                        </ul>
+                    </div>
                 </div>
             </section>
         </main>

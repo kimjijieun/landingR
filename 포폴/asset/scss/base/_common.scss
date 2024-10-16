@@ -3,7 +3,7 @@ body {
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.5;
-    color: #212529;
+    color: $main-black;
 
     &::-webkit-scrollbar {
         // display: none;
@@ -18,7 +18,12 @@ body {
 
     &.hidden{overflow: hidden;}
 }
-.main{    background: #ecece4;}
+.main{
+    background: $main-color;
+    z-index: 2;
+    margin-bottom: 100vh;
+    position: relative;
+}
 .blind,.hide{
     position: absolute;
     width: 1px;
