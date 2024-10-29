@@ -57,13 +57,13 @@ ScrollTrigger.matchMedia({
         },
     });
     
-    slideImg.to(".sc-project .project-wrap .item:nth-child(1)", { height: 0 }, "a");
+    slideImg.to(".sc-project .project-wrap .project-item:nth-child(1)", { height: 0 }, "a");
     slideImg.to(".sc-project .title-list a", { yPercent: -100 }, "a");
 
-    slideImg.to(".sc-project .project-wrap .item:nth-child(2)", { height: 0 }, "b");
+    slideImg.to(".sc-project .project-wrap .project-item:nth-child(2)", { height: 0 }, "b");
     slideImg.to(".sc-project .title-list a", { yPercent: -200 }, "b");
 
-    slideImg.to(".sc-project .project-wrap .item:nth-child(3)", { height: 0 }, "c");
+    slideImg.to(".sc-project .project-wrap .project-item:nth-child(3)", { height: 0 }, "c");
     slideImg.to(".sc-project .title-list a", { yPercent: -300 }, "c");
 
     // slideImg.to(".sc-project .item:nth-child(4)", { height: 0 }, "d");
@@ -156,59 +156,6 @@ subProjectItems.forEach((item, index) => {
 });
 
 
-// gsap.to(".img-wrap img", {
-//     y: 500,
-//     scrollTrigger: {
-//       trigger: ".roll-img-area",
-//       start: "top top",
-//       end: "bottom top",
-//       scrub: true
-//     }
-//   });
-
-
-// gsap.utils.toArray('.img-wrap').forEach(function (section, index) {
-//     gsap.to(section, {
-//       scrollTrigger: {
-//         trigger: section,
-//         start: "top 80%",
-//         end: "bottom 20%",
-//         toggleActions: "play none none reverse",
-//         scrub: 1,
-//       },
-//       opacity: 1,
-//       duration: 1,
-//     });
-//   });
-
-
-
-// 오른쪽 텍스트 항목 배열 가져오기
-let textItems = gsap.utils.toArray(".rolltext-box span");
-
-// 각 텍스트 항목을 스크롤에 맞춰 트리거 설정
-textItems.forEach((textItem, i) => {
-    gsap.fromTo(textItem, 
-        { 
-            // opacity: 0,  
-            y: 0,  // 초기 위치: 모두 -100%로 설정
-        }, 
-        { 
-            // opacity: 1,
-            transition: '0.3s',
-            y: () => `-${(i + 1) * 100}%`,     // 스크롤 시 원래 위치로 돌아옴
-            scrollTrigger: {
-                trigger: ".photo-txtBott",     // 이미지 전체를 기준으로 스크롤 트리거 설정
-                start: () => `top+=${i * window.innerHeight / 2} center`, // 각 아이템이 스크롤될 때 나타남
-                end: () => `top+=${(i + 1) * window.innerHeight / 2} center`, // 다음 아이템이 나타나면 이전 아이템 사라짐
-                toggleActions: "play none none reverse", // 스크롤 되돌릴 때 다시 사라지게
-                scrub: true,               // 스크롤에 따라 애니메이션이 동적으로 적용
-            }
-        }
-    );
-});
-
-
 
 
 let sliderItem = $('.slider-item');
@@ -222,18 +169,35 @@ console.log(sliderItemWidth); // 요소의 너비 출력
 gsap.to(sliderItem,{
   // x: () => sliderItemWidth * -10,
   xPercent: -70 * (sliderItem.length - 1), //스크롤시 70%만큼 이동
-  defaults:{
-    ease: "none", // <-- 이걸넣어야 횡스크롤 좌표가 안밀림!
-  },
-//   ease:"none",/
+  // defaults:{
+  //   ease: "none", // <-- 이걸넣어야 횡스크롤 좌표가 안밀림!
+  // },
+  ease:"none",
   scrollTrigger: {
     trigger:".sc-roll .sc-title",
     start:'top -10%',
     // end: '+=1500',
     end: '+=1500',
     pin:".sc-roll",
-    scrub:true,
-    markers:true,
+    scrub:1,
+    // markers:true,
     invalidateOnRefresh: true //반응형,ScrollTrigger 캐시를 재설정
   }
 });
+
+
+
+
+// gsap.to('.sc-roll .pan-box',{
+//   yPercent:-20,
+//   height:0,
+//   scrollTrigger: {
+//     trigger:".sc-roll .desc",
+//     start:'+=50 0',
+//     end: '+=1500',
+//     // end: '0 0',
+//     scrub:1,
+//     markers:true,
+//     invalidateOnRefresh: true //반응형,ScrollTrigger 캐시를 재설정
+//   }
+// })
