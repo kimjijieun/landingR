@@ -1,27 +1,61 @@
 @font-face {
-    // font-family: 'Pretendard-Light';
-    font-family: 'Pretendard';
-    font-weight: 200;
-    src: url(../fonts/Pretendard-Light.subset.woff2);
-  }
-  
-  @font-face {
-    // font-family: 'Pretendard-Regular';
-    font-family: 'Pretendard';
-    font-weight: 300;
-    src: url(../fonts/Pretendard-Regular.subset.woff2);
-  }
-  
-  @font-face {
-    // font-family: 'Pretendard-Medium';
-    font-family: 'Pretendard';
-    font-weight: 500;
-    src: url(../fonts/Pretendard-Medium.subset.woff2);
-  }
-  
-  @font-face {
-    // font-family: 'Pretendard-Bold';
-    font-family: 'Pretendard';
-    font-weight: bold;
-    src: url(../fonts/Pretendard-Bold.subset.woff2);
-  }
+  font-family: 'Pretendard';
+  src: url(../fonts/Pretendard-Light.woff2) format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(../fonts/Pretendard-Regular.woff2) format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(../fonts/Pretendard-Medium.woff2) format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(../fonts/Pretendard-SemiBold.woff2) format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(../fonts/Pretendard-Bold.woff2) format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Light.woff2) format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.woff2) format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Medium.woff2) format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Bold.woff2) format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Black.woff2) format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'PPHatton';
+  src: url(../fonts/PPHatton-MediumItalic.woff2) format('woff2');
+  // font-weight: 700;
+}
+@font-face {
+  font-family: 'PPPangaia';
+  src: url(../fonts/PPPangaia-MediumItalic.woff2) format('woff2');
+  // font-weight: 700;
+}

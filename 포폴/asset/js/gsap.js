@@ -58,16 +58,21 @@ ScrollTrigger.matchMedia({
     });
     
     slideImg.to(".sc-project .project-wrap .project-item:nth-child(1)", { height: 0 }, "a");
-    slideImg.to(".sc-project .title-list a", { yPercent: -100 }, "a");
+    slideImg.to(".sc-project .title-list .title-item", { yPercent: -100 }, "a");
 
     slideImg.to(".sc-project .project-wrap .project-item:nth-child(2)", { height: 0 }, "b");
-    slideImg.to(".sc-project .title-list a", { yPercent: -200 }, "b");
+    slideImg.to(".sc-project .title-list .title-item", { yPercent: -200 }, "b");
 
     slideImg.to(".sc-project .project-wrap .project-item:nth-child(3)", { height: 0 }, "c");
-    slideImg.to(".sc-project .title-list a", { yPercent: -300 }, "c");
+    slideImg.to(".sc-project .title-list .title-item", { yPercent: -300 }, "c");
 
     // slideImg.to(".sc-project .item:nth-child(4)", { height: 0 }, "d");
     // slideImg.to(".sc-project .slide-title a", { yPercent: -400 }, "d");
+    },
+
+    "(min-width: 767px) and (max-width: 1023px)": function () {
+      // 애니메이션을 비활성화하거나 초기화하는 옵션
+      // 예를 들어, 특정 요소의 초기 상태를 설정하거나 초기화할 수 있습니다.
     },
 });
 
@@ -104,13 +109,12 @@ txTl
 // });
 
 
+const menuTl = gsap.timeline({paused:true});
 
-menu = gsap.from('.header .menu-wrap .menu-item',{
-    opacity:0,
-    yPercent:20,
-    stagger:0.25,
-    paused:true,
-})
+menuTl
+  .to('.menu-wrap', { yPercent: '100' })
+  .to('.menu-wrap .menu-item a', { yPercent: '-100', stagger: 0.1, duration: 0.2 , delay: 0.1})
+  .to('.menu-wrap .social-list .social-item', { y: '0', delay: 0.1 });
 
 
 $('.btn-menu').click(function(){
@@ -118,12 +122,11 @@ $('.btn-menu').click(function(){
     $('body').toggleClass('hidden')
 
     if ($(this).hasClass('active')) {
-        $('.header .menu-wrap').addClass('active')
+      menuTl.play()
     } else {
-        $('.header .menu-wrap').removeClass('active')
+      menuTl.reverse()
     }
     // $('.header .menu-wrap').toggleClass('active')
-    menu.restart()
 })
 
 // $('.header .menu-area .menu-close').click(function(e){
