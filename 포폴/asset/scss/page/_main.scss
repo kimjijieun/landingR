@@ -19,7 +19,7 @@
   height: 100vh;
   position: relative;
 
-  .as {
+  .work-wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,16 +27,21 @@
     height: 100%;
     text-align: center;
     gap: 0.5rem;
-    opacity: 0;
-
+    
     .work-tit {
+      // opacity: 0;
       font-size: 1.5rem;
       text-transform: uppercase;
       font-weight: 500;
       letter-spacing: -0.5px;
       // width: 70%;
       line-height: 1.25;
+      overflow: hidden;
+      font-family: $En-font;
+      // transition: opacity 0.3s;
     }
+
+    // .work-desc{opacity: 0;}
   }
 
   // .work-desc{
@@ -71,7 +76,8 @@
 
     .title-list {
       overflow: hidden;
-      height: 22%;
+      // height: 22%;
+      height: 20%;
 
       .title-item {
         display: flex;
@@ -82,9 +88,8 @@
         .p-title {
           position: relative;
           font-size: 3.2rem;
-          // font-family: $En-font;
-          // font-family: 'PPHatton';
-          font-family: 'PPPangaia';
+          font-family: 'PP_Hatton';
+          // font-family: 'PP_Pangaia';
           font-weight: 400;
           font-style: italic;
           letter-spacing: -0.1rem;
@@ -126,8 +131,6 @@
             object-fit: cover;
           }
 
-          // &:nth-child(2){}
-
         }
 
         &:nth-child(1) {
@@ -156,12 +159,11 @@
             font-weight: 400;
             padding: 12px 15px;
             border-radius: 1000px;
-            // background: rgb(255 255 255 / 76%);
-            background: rgb(37 37 37 / 71%);
+            background: rgb(255 255 255 / 76%);
             box-sizing: border-box;
             letter-spacing: -0.5px;
 
-            color: #fff;
+            // color: #fff;
             // border: 1px solid;
           }
         }
@@ -191,15 +193,16 @@
         //   padding-right: 0.1rem;
         // }
 
-
-
         .video-box {
+          display: block;
+          filter: brightness(0.65);
           width: 100%;
           height: 100vh;
 
           video {
             width: 100%;
             height: 100%;
+            height: 90vh;
             object-fit: cover;
             background-position: 50%;
             background-size: cover;
@@ -232,6 +235,15 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+          }
+
+          video{
+            width: 100%;
+            height: 100%;
+            // height: 90vh;
+            object-fit: cover;
+            background-position: 50%;
+            background-size: cover;
           }
         }
 
@@ -444,7 +456,7 @@
       .slider-item {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        // justify-content: space-between;
         width: 35vw;
         height: 100%;
         border: 1px solid #2f2f2f;
@@ -452,6 +464,7 @@
         // padding: 1.5rem;
         box-sizing: border-box;
         overflow: hidden;
+        background: #fff;
 
         // @include desktop{
         //   width: 45%;
@@ -465,47 +478,31 @@
         //   padding: 1.5rem;              
         // }
         .slide-top {
-          height: 100%;
 
           .slide-img-box {
             position: relative;
-            overflow: hidden;
             width: 100%;
-            height: 65%;
+            padding-bottom: 43%;
+            overflow: hidden;
 
             img {
               //   height: 2.5rem;
               width: 100%;
               height: 100%;
-              /* position: absolute; */
+              position: absolute;
+              top: 0;
+              left: 0;
               object-fit: cover;
             }
           }
 
-          .slide-title-box {
-            padding: 0 20px;
-
-            h3 {
-              font-size: 1.7vw;
-              text-transform: uppercase;
-              //   @include desktop{
-              //     font-size: 3.5vw;
-              //   }
-              //   @include tablet {
-              //     font-size: 4.5vw;
-              //   }
-              //   @include mobile {
-              //     font-size: 4vw;
-              //   }
-            }
-          }
         }
-
+      
         .slide-bottom {
           // font-family: $preten-light;
+          border-top: 1px solid #2f2f2f;
           font-size: 0.9vw;
-          position: absolute;
-          bottom: 0;
+
           padding: 0 20px;
           //   @include desktop{
           //     font-size: 1.5vw;
@@ -516,6 +513,20 @@
           //   @include mobile {
           //     font-size: 3vw;
           //   }
+
+          .slide-title {
+            font-size: 1.7vw;
+            text-transform: uppercase;
+            //   @include desktop{
+            //     font-size: 3.5vw;
+            //   }
+            //   @include tablet {
+            //     font-size: 4.5vw;
+            //   }
+            //   @include mobile {
+            //     font-size: 4vw;
+            //   }
+          }
         }
       }
     }

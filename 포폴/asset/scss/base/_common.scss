@@ -16,15 +16,20 @@ body {
         border-radius: 4px;
     }
 
-    &.hidden{overflow: hidden;}
+    &.hidden {
+        overflow: hidden;
+    }
 }
-.main{
+
+.main {
     background: $main-color;
     z-index: 2;
     margin-bottom: 100vh;
     position: relative;
 }
-.blind,.hide{
+
+.blind,
+.hide {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -33,37 +38,60 @@ body {
     margin: -1px;
 }
 
-.cursor{
+.cursor {
     position: fixed;
     top: -1vw;
     left: 0.3rem;
     font-size: 1.1vw;
-    color: #484036;
+    color: $main-color;
     z-index: 99;
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
     font-weight: 500;
-    &.on{
+
+    &.on {
         opacity: 1;
         visibility: visible;
     }
-    &.spell1{left: 0.83rem;}
-    &.spell2{left: 1.27rem;}
-    &.spell3{left: 1.7rem;}
-    &.spell4{left: 2.35rem;}
-    &.spell5{left: 2.8rem;}
-    &.spell6{left: 3.2rem;}
-    &.spell7{left: 3.6rem;}
+
+    &.spell1 {
+        left: 0.83rem;
+    }
+
+    &.spell2 {
+        left: 1.27rem;
+    }
+
+    &.spell3 {
+        left: 1.7rem;
+    }
+
+    &.spell4 {
+        left: 2.35rem;
+    }
+
+    &.spell5 {
+        left: 2.8rem;
+    }
+
+    &.spell6 {
+        left: 3.2rem;
+    }
+
+    &.spell7 {
+        left: 3.6rem;
+    }
 }
+
 .common-inner {
     width: 100%;
     height: 100%;
     padding: 0 2vw;
 }
 
-.sc-title{
+.sc-title {
     // text-align: center;
     display: flex;
     justify-content: stretch;
@@ -76,19 +104,30 @@ body {
     // margin-bottom: 1vw;
     margin-bottom: 3rem;
     font-size: clamp(2rem, 2.16vw, 4rem);
+    font-family: $En-font;
+    letter-spacing: -0.07rem;
+
     // font-size: 1.56rem;
-    &::before {
-            content: "";
+    .dash {
+        content: "";
+        display: block;
+        // position: absolute;
+        width: .06rem;
+        height: 12vw;
+        // left: 0;
+        // top: 0;
+        // position: static;
+        // background: #000;
+        // opacity: .2;
+
+        .line{
             display: block;
-            // position: absolute;
-            width: .06rem;
-            height: 12vw;
-            // left: 0;
-            // top: 0;
-            // position: static;
-            background: #000;
-            opacity: .2;
+            width: 1px;
+            height: 100%;
+            background: #484036;
         }
+    }
+
     // .line{
     //     display: block;
     //     width: .06rem;
@@ -98,7 +137,7 @@ body {
     // }
 }
 
-.btn{
+.btn {
     position: relative;
     cursor: pointer;
     display: flex;
@@ -114,7 +153,7 @@ body {
         left: -25%;
         transform: scale(1, 0);
         opacity: 0;
-        transition:  opacity 1s, transform 0.5s;
+        transition: opacity 1s, transform 0.5s;
         transform-origin: top;
     }
 
@@ -130,6 +169,7 @@ body {
         position: relative;
         z-index: 9;
     }
+
     &:hover .btn-fill {
         transform-origin: bottom;
         transform: scale(1, 1);
@@ -145,5 +185,3 @@ body {
     overflow: hidden;
     border-radius: 0.3rem;
 }
-
-.sc-title{font-family: $En-font;}
