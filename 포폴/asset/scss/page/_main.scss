@@ -264,10 +264,11 @@
 
           span {
             font-size: 0.4rem;
-            border: 1px solid;
             border-radius: 21px;
             font-weight: 400;
             padding: 12px 14px;
+            backdrop-filter: blur(20px);
+            background-color: rgb(89 89 89 / 75%);
           }
         }
 

@@ -1008,10 +1008,12 @@ body.hidden {
 }
 .sub-project .project-area2 .project-list .project-item .txt-desc-bott span {
   font-size: 0.4rem;
-  border: 1px solid;
   border-radius: 21px;
   font-weight: 400;
   padding: 12px 14px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(89, 89, 89, 0.75);
 }
 .sub-project .project-area2 .project-list .project-item .txt-ani {
   position: absolute;
