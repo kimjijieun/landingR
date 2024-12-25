@@ -1,7 +1,7 @@
 $(function(){
     $(window).on('scroll', function (){
         curr = $(this).scrollTop();
-        workHeight = $('.sc-work').outerHeight();
+        workHeight = $('.sc-about').outerHeight();
     
         // let rolling = gsap.timeline({})
     

@@ -24,7 +24,7 @@ body {
 .main {
     background: $main-color;
     z-index: 2;
-    margin-bottom: 100vh;
+    // margin-bottom: 100vh;
     position: relative;
 }
 
@@ -126,6 +126,12 @@ body {
             height: 100%;
             background: #484036;
         }
+    }
+
+    .t-title{
+        overflow: hidden;
+        // transform: translateY(-100%);
+        // opacity: 1;
     }
 
     // .line{
